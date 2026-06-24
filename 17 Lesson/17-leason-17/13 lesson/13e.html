@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13e - Gmail Inbox</title>
+  <style>
+    body {
+      margin: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .inbox {
+      width: 390px;
+      padding: 12px 14px;
+      background-color: white;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 12px;
+      color: rgb(120, 120, 120);
+      font-size: 12px;
+    }
+
+    .email {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .email:last-child {
+      margin-bottom: 0;
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .email-info {
+      flex: 1;
+      display: block;
+    }
+
+    .email-title-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sender {
+      margin: 0;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .time {
+      color: gray;
+      font-size: 12px;
+    }
+
+    .subject {
+      display: block;
+      margin-top: 2px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .preview {
+      display: block;
+      margin-top: 3px;
+      color: gray;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <div class="inbox">
+    <span class="label">ALL INBOXES</span>
+
+    <div class="email">
+      <img class="avatar" src="RIFKY.jpg" alt="Rifky Reika">
+      <div class="email-info">
+        <div class="email-title-row">
+          <p class="sender">Rifky Reika</p>
+          <span class="time">4:58 PM</span>
+        </div>
+        <span class="subject">Biggest sales of the year!</span>
+        <span class="preview">Hey there! We're writing to tell you about our...</span>
+      </div>
+    </div>
+
+    <div class="email">
+      <img class="avatar" src="REVIN.jpg" alt="Revin">
+      <div class="email-info">
+        <div class="email-title-row">
+          <p class="sender">Revin</p>
+          <span class="time">12:32 PM</span>
+        </div>
+        <span class="subject">Your Best Buy eReceipt</span>
+        <span class="preview">Thank you for shopping at Best Buy, here is...</span>
+      </div>
+    </div>
+
+    <div class="email">
+      <img class="avatar" src="RAFAEL.jpg" alt="Rafael">
+      <div class="email-info">
+        <div class="email-title-row">
+          <p class="sender">Rafael</p>
+          <span class="time">9:00 AM</span>
+        </div>
+        <span class="subject">Here's what's coming soon to Netflix</span>
+        <span class="preview">Brand new movies and shows, old favorites...</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
