@@ -1,0 +1,128 @@
+p{
+  font-family:Roboto, Arial;
+  margin:0;
+}
+
+body{
+  background:#f8f8f8;
+}
+
+
+.videoinfo{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+
+.thumbnailinfo{
+  position:relative;
+}
+
+
+.thumbnail{
+  width:100%;
+}
+
+
+.waktu{
+  position:absolute;
+  right:5px;
+  bottom:8px;
+
+  background:black;
+  color:white;
+
+  font-size:12px;
+  padding:4px;
+}
+
+
+.video-info-grid{
+  display:grid;
+  grid-template-columns:45px 1fr;
+  margin-top:10px;
+}
+
+
+.profile-picture-container{
+  position:relative;
+  display:inline-block;
+}
+
+
+.profile-picture{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+
+.channel-tooltip{
+
+  position:absolute;
+  top:50px;
+  left:0;
+
+  width:200px;
+  background:white;
+
+  padding:12px;
+  border-radius:8px;
+
+  display:flex;
+  align-items:center;
+
+  box-shadow:0 2px 10px gray;
+
+  opacity:0;
+  pointer-events:none;
+
+  transition:.2s;
+  z-index:10;
+}
+
+
+.profile-picture-container:hover .channel-tooltip{
+  opacity:1;
+}
+
+
+.channel-tooltip-picture{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  margin-right:10px;
+}
+
+
+.channel-tooltip-name{
+  font-weight:bold;
+}
+
+
+.channel-tooltip-stats{
+  color:gray;
+  font-size:14px;
+}
+
+
+.judul{
+  font-size:15px;
+  font-weight:bold;
+  line-height:20px;
+}
+
+
+.judul a{
+  color:black;
+  text-decoration:none;
+}
+
+
+.youtuber,
+.views{
+  color:#606060;
+  font-size:14px;
+  margin-top:8px;
+}
